@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suraj Prakash | Professional Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+body {
+background-color: #fcf8f7;
+font-family: 'Montserrat', sans-serif;
+color: #333;
+margin: 0;
+line-height: 1.6;
+}
+
+header {
+background-color: #ffffff;
+padding: 50px 20px;
+text-align: center;
+border-bottom: 1px solid #eee;
+}
+
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3rem;
+margin: 0;
+color: #2c3e50;
+letter-spacing: 1px;
+}
+
+.designation {
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 4px;
+color: #95a5a6;
+font-size: 0.9rem;
+margin-top: 10px;
+}
+
+.container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+.profile-section {
+display: flex;
+align-items: center;
+gap: 60px;
+margin-bottom: 80px;
+padding: 20px;
+}
+
+.profile-photo {
+width: 350px;
+height: 450px;
+object-fit: cover;
+border-radius: 4px;
+box-shadow: 20px 20px 0px #e8eaf6;
+}
+
+.profile-description h2 {
+font-family: 'Playfair Display', serif;
+font-size: 2.2rem;
+font-style: italic;
+margin-bottom: 20px;
+}
+
+.info-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+margin-top: 50px;
+}
+
+.info-card {
+padding: 40px;
+border-radius: 20px;
+transition: all 0.3s ease;
+}
+
+.info-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+}
+.dom-input {
+margin-top: 15px;
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+border: 1px solid #ddd;
+font-family: inherit;
+}
+
+.dom-button {
+margin-top: 12px;
+padding: 10px 18px;
+border: none;
+border-radius: 20px;
+background-color: #2c3e50;
+color: white;
+cursor: pointer;
+font-family: inherit;
+transition: 0.3s;
+}
+
+.dom-button:hover {
+background-color: #d4a373;
+}
+
+footer {
+background-color: #ffffff;
+padding: 60px 20px;
+text-align: center;
+margin-top: 80px;
+}
+
+.social-links a {
+text-decoration: none;
+color: #34495e;
+font-weight: 600;
+margin: 0 20px;
+padding-bottom: 5px;
+border-bottom: 2px solid transparent;
+transition: 0.3s;
+}
+
+.social-links a:hover {
+border-bottom: 2px solid #d4a373;
+color: #d4a373;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Suraj Prakash</h1>
+<div class="designation">Student</div>
+</header>
+
+<div class="container">
+
+<section class="profile-section">
+<img src="https://picsum.photos/400/500" alt="Suraj Prakash" class="profile-photo">
+<div class="profile-description">
+<h2>The Creative Visionary</h2>
+<p>My desire is to craft digital landscapes that don't just solve problems, but tell a story. I believe that professional code should be as beautiful as the interface it powers. I am constantly seeking to merge technical robustness with high-end aesthetic value.</p>
+<p style="color: #7f8c8d; font-style: italic;">"Design is not just what it looks like and feels like. Design is how it works."</p>
+</div>
+</section>
+
+<div class="info-grid">
+
+<div class="info-card" style="background-color:#edf2fb;">
+<h3>Hobbies</h3>
+<ul id="hobbyList">
+<li>Minimalist photography</li>
+<li>Exploring architectural landmarks</li>
+</ul>
+<input class="dom-input" id="hobbyInput" placeholder="Add your hobby">
+<button class="dom-button" onclick="addHobby()">Add Hobby</button>
+</div>
+
+<div class="info-card" style="background-color:#f5ebe0;">
+<h3>Passion</h3>
+<p id="passionText">I am deeply passionate about Accessibility (A11y) in tech. Ensuring that the web is a place for everyone, regardless of their physical or cognitive abilities, is what drives my daily work.</p>
+<input class="dom-input" id="passionInput" placeholder="Write your passion">
+<button class="dom-button" onclick="updatePassion()">Update Passion</button>
+</div>
+
+<div class="info-card" style="background-color:#e2ece9;">
+<h3>Past Work</h3>
+<p id="pastWorkText">I've build various web applications and App. My focus has always been on performance optimization and clean, maintainable component architecture.</p>
+<input class="dom-input" id="pastWorkInput" placeholder="Write your past work">
+<button class="dom-button" onclick="updatePastWork()">Update Past Work</button>
+</div>
+
+<div class="info-card" style="background-color:#fefae0;">
+<h3>Social Life</h3>
+<p id="socialLifeText">I value meaningful connections. I regularly speak at local JavaScript meetups and believe in building a strong community through open mentorship and knowledge sharing.</p>
+<input class="dom-input" id="socialLifeInput" placeholder="Write your social life">
+<button class="dom-button" onclick="updateSocialLife()">Update Social Life</button>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="social-links">
+<a href="https://linkedin.com">LinkedIn</a>
+<a href="https://github.com">GitHub</a>
+<a href="https://twitter.com">Twitter / X</a>
+</div>
+<p style="margin-top: 30px; font-size: 0.8rem; color: #bdc3c7;">
+&copy; 2026 Suraj Prakash. Built with passion and precision.
+</p>
+</footer>
+
+<script>
+function addHobby() {
+  const input = document.getElementById("hobbyInput");
+  if (input.value !== "") {
+    const li = document.createElement("li");
+    li.innerText = input.value;
+    document.getElementById("hobbyList").appendChild(li);
+    input.value = "";
+  }
+}
+
+function updatePassion() {
+  const v = document.getElementById("passionInput").value;
+  if (v !== "") document.getElementById("passionText").innerText = v;
+}
+
+function updatePastWork() {
+  const v = document.getElementById("pastWorkInput").value;
+  if (v !== "") document.getElementById("pastWorkText").innerText = v;
+}
+
+function updateSocialLife() {
+  const v = document.getElementById("socialLifeInput").value;
+  if (v !== "") document.getElementById("socialLifeText").innerText = v;
+}
+</script>
+
+</body>
+</html>
