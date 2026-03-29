@@ -1,0 +1,49 @@
+/* Base container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  /* This makes the color switch smooth! */
+  transition: background-color 0.4s ease, color 0.4s ease; 
+}
+
+/* --- THEME CLASSES --- */
+.light-theme {
+  background-color: #f4f4f9;
+  color: #333333;
+}
+
+.dark-theme {
+  background-color: #222222;
+  color: #f4f4f9;
+}
+
+/* Base button styling */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.4s ease, transform 0.1s ease;
+}
+
+.toggle-button:active {
+  transform: scale(0.95); /* A satisfying click effect */
+}
+
+/* --- BUTTON COLOR CLASSES --- */
+.button-light {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.button-dark {
+  background-color: #f39c12; /* Orange */
+  color: #222222;
+}
