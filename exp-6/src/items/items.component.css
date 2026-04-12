@@ -1,0 +1,11 @@
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+}
+.post-card h3 {
+  margin-top: 0;
+  color: #333;
+}

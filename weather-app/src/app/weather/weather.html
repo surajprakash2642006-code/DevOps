@@ -1,0 +1,14 @@
+<!-- weather.html -->
+<div *ngIf="loading" class="loading">Loading weather data...</div>
+
+<div *ngIf="!loading && error" class="error">{{ error }}</div>
+
+<div *ngIf="!loading && weatherData && weatherData.current_weather" class="weather-card">
+  <h2>{{ city }}</h2>
+  <p class="temp">{{ weatherData.current_weather.temperature }} °C</p>
+  <p class="climate">Wind: {{ weatherData.current_weather.windspeed }} km/h</p>
+  <p class="climate">Weather Code: {{ weatherData.current_weather.weathercode }}</p>
+</div>
+
+<!-- Debug: optional to see raw data -->
+<pre *ngIf="weatherData">{{ weatherData | json }}</pre>
